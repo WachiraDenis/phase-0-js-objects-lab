@@ -24,9 +24,11 @@ function removeEventProperty(attendee){
 function addCheckedInProperty(attendee) {
     attendee.checkedIn = true;
 }
-updateTicketPrice(attendee, "4000")
-removeEventProperty(attendee, Event)
-
+logAttendeeName(attendee, Denis)
+updateTicketPrice(attendee, "4000");
+removeEventProperty(attendee, Event);
+updateTicketType(attendee, VVIP);
+addCheckedInProperty(attendee, checkedIn)
 console.log(attendee);
 
 //Needed for the tests to work. Don't modify
