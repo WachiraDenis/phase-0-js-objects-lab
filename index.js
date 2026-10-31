@@ -12,11 +12,11 @@ function logAttendeeName(attendee){
 function logTicketPrice(attendee){
   console.log(attendee.ticketPrice);
 }
-function logupdateTicketType(attendee, newTicketType){
+function updateTicketType(attendee, newTicketType){
   attendee.ticketType= newTicketType
 }
 function updateTicketPrice(attendee,newTicketPrice){
-  attendee.newTicketPrice = newTicketPrice
+  attendee.ticketPrice = newTicketPrice;
 }
 function removeEventProperty(attendee){
   delete attendee.event
@@ -24,11 +24,11 @@ function removeEventProperty(attendee){
 function addCheckedInProperty(attendee) {
     attendee.checkedIn = true;
 }
-logAttendeeName(attendee, Denis)
+logAttendeeName(attendee, "Denis")
 updateTicketPrice(attendee, "4000");
 removeEventProperty(attendee, Event);
-updateTicketType(attendee, VVIP);
-addCheckedInProperty(attendee, checkedIn)
+updateTicketType(attendee, "VVIP");
+addCheckedInProperty(attendee)
 console.log(attendee);
 
 //Needed for the tests to work. Don't modify
